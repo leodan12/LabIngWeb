@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> Enviar parámetros del HTTP GET-URL</h1>
+	<ul>
+<!-- 	POR ESTOS MEDIOS SE ESTÁN ENVIANDO LOS PARÁMETROS QUE SE LE HA ASIGNADO EN CADA CONSTRUCTOR -->
+
+		<li> <a th:href="@{/params/string(texto='HOLA COMO ESTÁS?')}">/params/string?texto=Hola como estas</a></li>
+		
+		<li> <a th:href="@{/params/string(texto='Practica de Spring')}">/params/string?texto=Practica de Spring</a></li>
+		
+		<li> <a th:href="@{/params/mix-params(saludo='Practica de Spring Saludo',numero=11)}">/params/mix-params(saludo='Practica de Spring Saludo',numero=11)</a></li>
+		
+		<li> <a th:href="@{/params/mix-params-request(saludo='Practica de Spring Saludo Validado',numero='Hola')}">/params/mix-params-request(saludo='Practica de Spring Saludo Validado',numero='hola')</a></li>
+	</ul>
+</body>
+</html>
