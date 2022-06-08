@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 //Component se encarga de crear los objetos con el constructor sin parámetros
 
-@Component("MiServicioSimple")
+//@Component("MiServicioSimple")
 public class MiServicio implements IServicio{
 		
 	public String operacion() {

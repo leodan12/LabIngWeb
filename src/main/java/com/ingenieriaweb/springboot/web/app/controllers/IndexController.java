@@ -18,7 +18,7 @@ public class IndexController {
 	//Qualifier para diferenciar, debido a que el primario esta por defecto
 	//pero en este momento quiero usar MiServicioSimple, entonces uso el Qualifier
 	@Autowired
-	@Qualifier("MiServicioSimple")
+//	@Qualifier("MiServicioSimple")
 	private IServicio servicio;
 	
 //	//Esto está muy acoplado: no me llames, nosotros te vamos a llamar
